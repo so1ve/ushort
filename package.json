@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "packageManager": "pnpm@8.5.1",
+  "scripts": {
+    "build": "nitropack build",
+    "dev": "nitropack dev",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "preview": "node .output/server/index.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hash-wasm": "^4.9.0"
+  },
+  "devDependencies": {
+    "@so1ve/eslint-config": "^0.92.0",
+    "@vercel/kv": "^0.2.1",
+    "eslint": "^8.41.0",
+    "nitropack": "latest",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  }
+}
